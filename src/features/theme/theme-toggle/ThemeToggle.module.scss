@@ -1,0 +1,40 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.themeSwitch {
+  width: 48px;
+  
+  :global(.ant-switch-inner) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    .anticon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.themeLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+body[data-theme="dark"] {
+  .themeLabel {
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .themeLabel {
+    display: none;
+  }
+}
