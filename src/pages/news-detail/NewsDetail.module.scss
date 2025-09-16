@@ -1,0 +1,30 @@
+.container {
+  padding: 16px;
+}
+
+.backLink {
+  margin-bottom: 16px;
+  
+  a {
+    color: #1890ff;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.actions {
+  margin-top: 16px;
+}
+
+.comments {
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
+}
